@@ -59,8 +59,9 @@
   ```cpp
   double a = 1.0, b = 1.5, c = 2.0;
   point ver = vertex(a, b, c);
-  printf("%f %f\n", ver.x, ver.y);
+  printf("%f\n%f\n", ver.x, ver.y);
   ```
   ```sh
-  > error
+  > -0.750000
+  > 0.125000
   ```

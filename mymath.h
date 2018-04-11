@@ -1,5 +1,7 @@
 // Added point struct
-struct point;
+struct point {
+  double x, y;
+};
 
 // Calculate square root of num
 double sqrt(double);
@@ -19,7 +21,7 @@ double integer(double);
 double integral(double, double, double, double, double);
 
 // Calculate integral of quadratic function with precission
-// double integral(double, double, double, double, double, double);
+double integral(double, double, double, double, double, double);
 
 // Calculate vertex of quadratic function
 point vertex(double, double, double);
