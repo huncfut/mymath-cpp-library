@@ -60,11 +60,11 @@ double integral(double a, double b, double c, double beg, double end) {
 
 // Calculate integral of quadratic function with precission
 double integral(double a, double b, double c, double beg, double end, double tries) {
-  double sum = 0;
-
+  double sum = 0, base = beg;
   double ds = abs(beg - end) / tries;
-  for(int i = beg; i < end; i += ds) {
-    sum += calcTrapField(quadFun(a, b, c, i), quadFun(a, b, c, i + ds), ds);
+  for(int i = 0; i < tries; i ++) {
+    sum += calcTrapField(quadFun(a, b, c, base), quadFun(a, b, c, base + ds), ds);
+    base += ds;
   }
   return sum;
 }
